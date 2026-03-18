@@ -61,6 +61,12 @@ height: 500px;
     width: 100%;
     background-color: antiquewhite;
 
+    .persona{
+        height: 100%;
+        width: 25%;
+        background-color: blueviolet;
+    }
+
     .foto{
         width: 60px;
         height: 60px;
