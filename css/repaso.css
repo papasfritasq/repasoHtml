@@ -53,3 +53,18 @@ height: 500px;
     width: 100%;
     background-color: white;
 }
+
+.staff
+{
+    height: 280px;
+    display: flex;
+    width: 100%;
+    background-color: antiquewhite;
+
+    .foto{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
