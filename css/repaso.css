@@ -1,76 +1,251 @@
 @import url('reset.css');
 
-body{
-    background-color: steelblue;
-   min-height: 100dvh;  /*100% del viewport height */
+body
+{
+    max-width: 100vw;
+    background-color: white;
+    min-height: 100dvh;/*100% de la pantalla ya sea de celu o compu*/
+    overflow-x: hidden;
 }
-header, footer{
-    width: 100%;
-    height: 10%;
-    padding:50px
+header{
+   width: 100%;
+    height: 80px; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
+.foto2{
+    height: auto;
+    width: 40px;
+}
+.marca{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.marca a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+.redes{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;      
+    gap: 40px;
+    font-size: 28px;  
+}
+
+footer
+{
+    align-items:center;
+    padding: 10px;
+}
+
 main{
-    background-color: rgb(224, 224, 224);
     height: 80%;
 }
 
-.banner, .descripcion, .nosotros, .productos{
+.descripcion, .nosotros{
     width: 100%;
     height: 25%;
     border: solid 3px black;
 }
 
 .amarillo{
-    background-color: rgb(191, 250, 13);
+    background-color:antiquewhite;
 }
 
 
 .productos{
     display: flex;
-height: 500px;
+    height: 500px;
     flex-direction: row;
-    justify-content:center; /* Centra los productos horizontalmente */
-    align-items: center; /* Centra los productos verticalmente */
-    gap: 5px; /** Espacio entre los productos */
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
-
-.producto{
-    /* flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto; */
-
-    flex: 1 0 25%; /* Equivalente a las tres propiedades anteriores */
+.producto1{
+    /* flex-grow:1 ;    me permite que el contenedor se expanga dependiendo de la página, si la achico el coso se achica, si se agranda el coso se agranda
+    flex-shrink:1 ;  /*si está en 0 deshablito que el contenedir se desachique. Si tengo algo escrito se amolda a su tamaño
+    flex-basis: auto;  /*usa el tamaño de width y se achica dependendiendo de ESE tamaño*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 30%;
+    max-width: 400px;
     height: 100%;
-    background-color: orange;
     border: solid 3px black;
-    padding: 5px;
-    ;
+    background-color:  #96ac60;
 }
-
-
-.foto{
-    height: 60%;
-    width: 100%;
+.producto2{
+    /* flex-grow:1 ;    me permite que el contenedor se expanga dependiendo de la página, si la achico el coso se achica, si se agranda el coso se agranda
+    flex-shrink:1 ;  /*si está en 0 deshablito que el contenedir se desachique. Si tengo algo escrito se amolda a su tamaño
+    flex-basis: auto;  /*usa el tamaño de width y se achica dependendiendo de ESE tamaño*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 30%;
+    max-width: 400px;
+    height: 100%;
+    border: solid 3px black;
+    background-color: #586e26;
+}
+.producto3{
+    /* flex-grow:1 ;    me permite que el contenedor se expanga dependiendo de la página, si la achico el coso se achica, si se agranda el coso se agranda
+    flex-shrink:1 ;  /*si está en 0 deshablito que el contenedir se desachique. Si tengo algo escrito se amolda a su tamaño
+    flex-basis: auto;  /*usa el tamaño de width y se achica dependendiendo de ESE tamaño*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 30%;
+    max-width: 400px;
+    height: 100%;
+    border: solid 3px black;
+    background-color: #ffe9f0;
+}
+.producto4{
+    /* flex-grow:1 ;    me permite que el contenedor se expanga dependiendo de la página, si la achico el coso se achica, si se agranda el coso se agranda
+    flex-shrink:1 ;  /*si está en 0 deshablito que el contenedir se desachique. Si tengo algo escrito se amolda a su tamaño
+    flex-basis: auto;  /*usa el tamaño de width y se achica dependendiendo de ESE tamaño*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 30%;
+    max-width: 400px;
+    height: 100%;
+    border: solid 3px black;
+    background-color:#ffd8f1;
+}
+.p{
+    color: black;
+    font-family:cursive;
+    font-size:15px;
+    font-weight: bold;
+}
+.detalle{
+    margin-bottom: 20px;
+    color: black;
+    font-family:cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fotoP1{
+    display: flex;
+    height: 70%;
+    width: auto;
+    margin:auto;
     background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.fotoP1 img {
+    
+        width: 200%;
+        height: 100%;
+        object-fit: cover;
+}
+.fotoP2{
+    display: flex;
+    height: 70%;
+    width: auto;
+    margin:auto;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.fotoP2 img {
+    
+        width: 200%;
+        height: 100%;
+        object-fit: cover;
+}
+.fotoP3{
+    display: flex;
+    height: 70%;
+    width: auto;
+    margin:auto;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.fotoP3 img {
+    
+        width: 200%;
+        height: 100%;
+        object-fit: cover;
+}
+.fotoP4{
+    display: flex;
+    height: 70%;
+    width: auto;
+    margin:auto;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.fotoP4 img {
+    
+        width: 200%;
+        height: 100%;
+        object-fit: cover;
+}
+.boton{
+    display: flex;
+    justify-content: center;
 }
 
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto1{
+    height: 700px;
+    width: 1800px;  
+
+}
+.letra{
+    color: white;
+    font-family:cursive;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
 .staff
 {
     height: 280px;
     display: flex;
     width: 100%;
-    background-color: antiquewhite;
-
+    justify-content: center;
+    
     .persona{
         height: 100%;
         width: 25%;
-        background-color: blueviolet;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .foto{
-        width: 60px;
-        height: 60px;
+    .foto {
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
-        background-color: blue;
+        overflow: hidden; 
+    }
+
+    .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
